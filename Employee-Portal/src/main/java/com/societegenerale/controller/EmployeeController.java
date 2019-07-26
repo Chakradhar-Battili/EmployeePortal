@@ -1,5 +1,6 @@
 package com.societegenerale.controller;
 
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
@@ -27,7 +28,7 @@ import com.societegenerale.service.EmployeeService;
 * @version 1.0
 */
 @RestController
-@RequestMapping("/api/employees")
+@RequestMapping("/employee")
 @Api(value="EmployeeController")
 public class EmployeeController {
 
@@ -37,15 +38,13 @@ public class EmployeeController {
 	@GetMapping("/fetch")
 	@ApiOperation(value = "View a List of All Employees", response = List.class)
 	public List<Employee> fetchAllEmployeesList() throws EmployeeException {
-		System.out.println("Fetch");
 		return employeeService.fetchAllEmployeesList();
 	}
-
-	@PostMapping
+	
+	@PostMapping("/create")
+	@ApiOperation(value = "Register an employee")
 	@ResponseStatus(HttpStatus.OK)
-	@ApiOperation(value = "Register a employee")
 	public Employee createEmployee(@RequestBody Employee employee) throws EmployeeException {
-		System.out.println("Insert");
 		if(!Optional.ofNullable(employee).isPresent()) throw new EmployeeException("Employee input data missing");
 		return employeeService.createEmployee(employee);
 	}

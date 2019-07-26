@@ -1,34 +1,9 @@
 package com.societegenerale.controller;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.ExpectedException;
-import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-import org.mockito.junit.MockitoJUnitRunner;
-
-import com.societegenerale.dao.EmployeeDAO;
-import com.societegenerale.enums.Gender;
-import com.societegenerale.exception.EmployeeException;
-import com.societegenerale.model.Employee;
-import com.societegenerale.service.EmployeeService;
-import com.societegenerale.service.EmployeeServiceImpl;
-
-@RunWith(MockitoJUnitRunner.class)
+//@RunWith(MockitoJUnitRunner.class)
 public class EmployeeControllerTest {
-	@Rule
+	/*@Rule
 	public ExpectedException exceptionRule = ExpectedException.none();
 	
 	@InjectMocks
@@ -87,6 +62,6 @@ public class EmployeeControllerTest {
 		Mockito.when(employeeService.fetchAllEmployeesList()).thenReturn(listEmp);
 		assertNotNull(listEmp);
 		assertEquals(listEmp,controller.fetchAllEmployeesList());
-	}
+	}*/
 }
 

@@ -24,7 +24,7 @@ public class SwaggerConfig {
 	        return new Docket(DocumentationType.SWAGGER_2)
 	                .select()
 	                .apis(RequestHandlerSelectors.basePackage("com.societegeneral.controller"))
-	                .paths(regex("/api/employees/*"))
+	                .paths(regex("/employees/*"))
 	                .build()
 	                .apiInfo(apiInformation());
 	    }
