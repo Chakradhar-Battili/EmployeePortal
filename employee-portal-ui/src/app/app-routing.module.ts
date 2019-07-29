@@ -5,18 +5,8 @@ import { RegistrationComponent } from './components/registration/registration.co
 
 const routes: Routes = [
 
-   {
-     path: 'registration',
-     component: RegistrationComponent
-  },
-  // {
-  //   path: 'admin/view/:id',
-  //   component: ViewRegistrationComponent
-  // },
-  {
-    path: 'employeelist',
-    component: EmployeesComponent
-  }
+   { path: 'users', component: EmployeesComponent },
+  { path: 'add', component: RegistrationComponent }
 
 ];
 
