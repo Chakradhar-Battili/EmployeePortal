@@ -2,6 +2,7 @@ package com.societegenerale.service;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -74,10 +75,8 @@ public class EmployeeServiceImplTest {
 	}
 	
 	@Test
-	public void whenNoEmpFetch_thenThrowExceptionAndExpectationSatisfied() throws EmployeeException{
-		exceptionRule.expect(EmployeeException.class);
-		exceptionRule.expectMessage("Issue while fetching Employees data");
-		service.fetchAllEmployeesList();
+	public void whenNoEmpFetch_thenThrowExceptedNull() throws EmployeeException{
+		assertNull(service.fetchAllEmployeesList());
 	}
 
 	@Test

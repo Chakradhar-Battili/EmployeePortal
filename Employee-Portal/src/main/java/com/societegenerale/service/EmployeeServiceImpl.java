@@ -34,7 +34,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public List<Employee> fetchAllEmployeesList() throws EmployeeException{
 		try{
 			List<Employee> employeeList = employeeDao.findAll();
-			if(employeeList == null || employeeList.isEmpty()) throw new EmployeeException();
+			if(employeeList == null || employeeList.isEmpty()) return null;
 			
 			employeeList.sort(Comparator.comparing(Employee::getFirstName));
 			return employeeList;

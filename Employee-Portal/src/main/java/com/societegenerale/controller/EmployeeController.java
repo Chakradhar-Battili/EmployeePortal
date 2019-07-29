@@ -22,16 +22,15 @@ import com.societegenerale.service.EmployeeService;
 
 
 /**
-* This class act as restservice controller.
-*
+* This class act as restservice controller
+
 * @author  Chakradhar
 * @version 1.0
 */
 @RestController
-@RequestMapping("/employee")
+@RequestMapping("api/employee")
 @Api(value="EmployeeController")
 public class EmployeeController {
-
 	@Autowired
 	EmployeeService employeeService;
 
