@@ -34,3 +34,11 @@ html {
   .table-bordered, .table-bordered td, .table-bordered th {
     border: 1px solid #2F465D;
   }
+  
+  .table td,.table th {
+    padding:1px;
+  }
+  
+  .inputField{
+	  width:45%;
+  }

@@ -1,15 +1,25 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div class="container-fluid">
-<div class="col-md-offset-1" style="text-align:center">
-  <h1>
-    {{title}}
-  </h1>
-</div>
+	<div class="col-md-offset-1" style="text-align:center">
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-2" style="padding-left:115px;">
+				<img width="150"  alt="Societe Generale Logo" src="../assets/societe-generale-logo.jpg">
+			</div>
+			<div class="col-sm-2" class="badge badge-info" style="margin-left:390px;">{{title}}</div>
+		</div>  
+	</div>
 
-<a routerLink="/users">List Users</a>
-<a style="margin-left:10px" routerLink="/add">Add User</a>
-<br/>
-<router-outlet></router-outlet>
+	<div class="container">
+		<div class="row" style="margin: 10px;">
+			<div class="col-sm-2">
+				<a routerLink="/users" class="badge badge-success">List Users</a>
+			</div>
+			<div class="col-sm-2">
+			<a style="margin-left:10px" routerLink="/add" class="badge badge-success">Add User</a>
+			</div>
+		</div>
+		<router-outlet></router-outlet>
+	</div>
 </div>
 
 

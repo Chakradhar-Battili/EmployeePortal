@@ -12,11 +12,11 @@ export class EmployeeService {
   constructor(private http:HttpClient) { }
 
   getEmployees(): Observable<any> {
-    return this.http.get('employee/fetch');
+    return this.http.get('api/employee/fetch');
   }
 
   createEmployeeRegistration(employee) {
     let body = JSON.stringify(employee);
-    return this.http.post('employee/create',body,httpOptions);
+    return this.http.post('api/employee/create',body,httpOptions);
   }
 }
