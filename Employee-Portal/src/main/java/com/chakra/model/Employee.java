@@ -1,4 +1,4 @@
-package com.societegenerale.model;
+package com.chakra.model;
 
 import java.util.Date;
 
@@ -13,8 +13,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.chakra.enums.Gender;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.societegenerale.enums.Gender;
 
 @Entity
 @Table(name="EMPLOYEE")

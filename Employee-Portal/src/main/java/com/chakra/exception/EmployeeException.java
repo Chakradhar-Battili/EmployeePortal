@@ -1,4 +1,4 @@
-package com.societegenerale.exception;
+package com.chakra.exception;
 
 public class EmployeeException extends Exception {
 

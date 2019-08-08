@@ -1,9 +1,9 @@
-package com.societegenerale.service;
+package com.chakra.service;
 
 import java.util.List;
 
-import com.societegenerale.exception.EmployeeException;
-import com.societegenerale.model.Employee;
+import com.chakra.exception.EmployeeException;
+import com.chakra.model.Employee;
 
 public interface EmployeeService {
 	public List<Employee> fetchAllEmployeesList() throws EmployeeException;

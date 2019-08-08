@@ -1,6 +1,7 @@
-package com.societegenerale.controller;
+package com.chakra.controller;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -18,12 +19,12 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import com.societegenerale.dao.EmployeeDAO;
-import com.societegenerale.enums.Gender;
-import com.societegenerale.exception.EmployeeException;
-import com.societegenerale.model.Employee;
-import com.societegenerale.service.EmployeeService;
-import com.societegenerale.service.EmployeeServiceImpl;
+import com.chakra.dao.EmployeeDAO;
+import com.chakra.enums.Gender;
+import com.chakra.exception.EmployeeException;
+import com.chakra.model.Employee;
+import com.chakra.service.EmployeeService;
+import com.chakra.service.EmployeeServiceImpl;
 
 
 @RunWith(MockitoJUnitRunner.class)

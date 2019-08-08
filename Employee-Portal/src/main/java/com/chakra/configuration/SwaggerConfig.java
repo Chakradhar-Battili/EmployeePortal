@@ -1,4 +1,4 @@
-package com.societegenerale.configuration;
+package com.chakra.configuration;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
@@ -23,7 +23,7 @@ public class SwaggerConfig {
 	    public Docket productApi() {
 	        return new Docket(DocumentationType.SWAGGER_2)
 	                .select()
-	                .apis(RequestHandlerSelectors.basePackage("com.societegeneral.controller"))
+	                .apis(RequestHandlerSelectors.basePackage("com.chakra.controller"))
 	                .paths(regex("/api/employee/*"))
 	                .build()
 	                .apiInfo(apiInformation());
@@ -32,7 +32,7 @@ public class SwaggerConfig {
 	 private ApiInfo apiInformation() {
 		    return new ApiInfo(
 		      "Employee Portal", 
-		      "Some employee related APIs (Societe Generale Test)", 
+		      "Some employee related APIs Test", 
 		      "API TOS", 
 		      "Terms of service", 
 		      new Contact("Chakradhar Battili", "https://github.com/Chakradhar-Battili", "chakradhar.battili@gmail.com"), 

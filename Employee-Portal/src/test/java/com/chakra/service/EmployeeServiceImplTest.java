@@ -1,4 +1,4 @@
-package com.societegenerale.service;
+package com.chakra.service;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -20,10 +20,10 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import com.societegenerale.dao.EmployeeDAO;
-import com.societegenerale.enums.Gender;
-import com.societegenerale.exception.EmployeeException;
-import com.societegenerale.model.Employee;
+import com.chakra.dao.EmployeeDAO;
+import com.chakra.enums.Gender;
+import com.chakra.exception.EmployeeException;
+import com.chakra.model.Employee;
 
 @RunWith(MockitoJUnitRunner.class)
 public class EmployeeServiceImplTest {

@@ -1,4 +1,4 @@
-package com.societegenerale.controller;
+package com.chakra.controller;
 
 
 import io.swagger.annotations.Api;
@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.societegenerale.exception.EmployeeException;
-import com.societegenerale.model.Employee;
-import com.societegenerale.service.EmployeeService;
+import com.chakra.exception.EmployeeException;
+import com.chakra.model.Employee;
+import com.chakra.service.EmployeeService;
 
 
 /**

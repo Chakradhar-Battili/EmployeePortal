@@ -1,4 +1,4 @@
-package com.societegenerale.service;
+package com.chakra.service;
 
 import java.util.Comparator;
 import java.util.List;
@@ -7,9 +7,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.societegenerale.dao.EmployeeDAO;
-import com.societegenerale.exception.EmployeeException;
-import com.societegenerale.model.Employee;
+import com.chakra.dao.EmployeeDAO;
+import com.chakra.exception.EmployeeException;
+import com.chakra.model.Employee;
 
 
 /**

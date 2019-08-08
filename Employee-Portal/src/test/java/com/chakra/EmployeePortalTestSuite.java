@@ -1,11 +1,11 @@
-package com.societegenerale;
+package com.chakra;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import com.societegenerale.controller.EmployeeControllerTest;
-import com.societegenerale.service.EmployeeServiceImplTest;
+import com.chakra.controller.EmployeeControllerTest;
+import com.chakra.service.EmployeeServiceImplTest;
 
 @RunWith(Suite.class)
 @SuiteClasses({EmployeeControllerTest.class,EmployeeServiceImplTest.class})

@@ -1,4 +1,4 @@
-package com.societegenerale.enums;
+package com.chakra.enums;
 
 public enum Gender {
 	MALE,FEMALE;
