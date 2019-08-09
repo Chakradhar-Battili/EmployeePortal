@@ -3,6 +3,8 @@ package com.chakra.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 
 import java.util.List;
 import java.util.Optional;
@@ -29,19 +31,24 @@ import com.chakra.service.EmployeeService;
 */
 @RestController
 @RequestMapping("api/employee")
-@Api(value="EmployeeController")
+@Api(value="EmployeeController", produces="Employee or List Of Employees")
 public class EmployeeController {
 	@Autowired
 	EmployeeService employeeService;
 
 	@GetMapping("/fetch")
-	@ApiOperation(value = "View a List of All Employees", response = List.class)
+	@ApiOperation(value = "View a List of All Employees")
 	public List<Employee> fetchAllEmployeesList() throws EmployeeException {
 		return employeeService.fetchAllEmployeesList();
 	}
 	
 	@PostMapping("/create")
-	@ApiOperation(value = "Register an employee")
+	@ApiOperation(produces="Employee Object", value = "Register an employee")
+	@ApiResponses(
+			value={
+					@ApiResponse(code=100,message="100 is the message"),
+					@ApiResponse(code=200,message="200 is the message")
+			})
 	@ResponseStatus(HttpStatus.OK)
 	public Employee createEmployee(@RequestBody Employee employee) throws EmployeeException {
 		if(!Optional.ofNullable(employee).isPresent()) throw new EmployeeException("Employee input data missing");

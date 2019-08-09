@@ -24,7 +24,7 @@ public class SwaggerConfig {
 	        return new Docket(DocumentationType.SWAGGER_2)
 	                .select()
 	                .apis(RequestHandlerSelectors.basePackage("com.chakra.controller"))
-	                .paths(regex("/api/employee/*"))
+	                .paths(regex("/api/employee.*"))
 	                .build()
 	                .apiInfo(apiInformation());
 	    }

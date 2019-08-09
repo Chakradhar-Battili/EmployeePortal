@@ -1,5 +1,7 @@
 package com.chakra.model;
 
+import io.swagger.annotations.ApiModelProperty;
+
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -27,6 +29,7 @@ public class Employee {
 	private Long id;
 	
 	@Column(name="FIRST_NAME")
+	@ApiModelProperty(notes="This is first name as per Certificate")
 	private String firstName;
 	
 	@Column(name="LAST_NAME")
@@ -38,6 +41,7 @@ public class Employee {
 	
 	@Column(name="DATE_OF_BIRTH")
 	@Temporal(TemporalType.DATE)
+	@ApiModelProperty(notes="This is Date Of Birth as per Certificate")
 	private Date dateOfBirth;
 	
 	@Column(name="DEPARTMENT")
